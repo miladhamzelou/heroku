@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+	<title></title>
+</head>
+<body ng-app="myApp">
+<div ng-controller="post">
+	<label>Enter Number One: </label>
+	<input id="number1" type="text" ng-model="number1" maxlength="8" ng-change="getNumber1(number1)"><br>	
+	<label>Enter Number Two: </label>
+	<input id="number2" type="text" ng-model="number2" maxlength="12" ng-change="getNumber2(number2)"><br>	
+
+	<button name="button" ng-click="startAnimation();">Start Animation</button><br>
+
+	<button name="button" ng-click="send();">Send Phone Number</button><br>
+	<button name="button" ng-click="reset();">Reset</button><br>
+</div>
+	
+</body>
+</html>
